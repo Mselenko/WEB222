@@ -1,0 +1,125 @@
+/********************************************************************************* 
+* 
+* WEB222 – Assignment #4b 
+* 
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Margarita Selenko  Student ID: 147393169  Date: 3/25/18 
+* 
+********************************************************************************/
+
+
+
+.main-container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+/* Select an element with class “main-container” and adjust it’s size and margin position */
+
+.main-container nav{
+    width: 30%;
+    float: left;
+}
+/* Select all <nav> elements that are a child of an element with class “main-container” and adjust it’s size and position */
+
+.main-container .main{
+    width: 70%;
+    float: right;
+}
+/* Select an element with class ".main" that is a child of an element with class “main-container” and adjust it’s size and position */
+
+.main-container header{
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    margin-bottom: 30px;
+}
+/* Select a header element that is a child of an element with class “main-container” and adjust it’s padding size, background color, border (style,
+color, size) and size between 2 elements (margin-bottom)*/
+
+.main-container header h1{
+    width: 70%; 
+    font-size:24px; 
+    float: right; 
+    text-align: right; 
+    margin-top:10px; 
+    
+}
+/* Select all h1 elements that are a child of an header element that is a child of element with class “main-container” and adjust it’s size, position,
+text size, text position and size between 2 elements (margin-top) */
+
+.main-container footer{
+    clear:both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    font-size:13px;
+}
+
+/* Select footer element that are a child of an element with class “main-container” and adjust it’s text size, padding, background color, border(style,size and color)
+and do not allow floating elements to float footer*/
+
+#logo{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Select element with id “logo” and adjust it’s size, size of text and sets how thick characters in text should be displayed*/
+
+#logo img{
+    width: 94px;
+    vertical-align: middle;
+}
+/* Select all img elements that are a child of an element with id “logo” and adjust it’s size and position */
+
+nav ul{
+    list-style-type: none;
+}
+/* Select all <ul> elements that are a child of an <nav> element and specifies the type of list-item*/
+
+nav ul a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+/* Select all <a> elements that are a child of  a <ul> elements that are a child of a <nav> element and adjust decoration of text, padding size 
+and the display method of the links */
+
+
+div.province{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/* Select all <div> elements with class "province" and adjust it’s size, position and margin size*/
+
+div.province.description{
+    max-height: 165px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin: 8px 0px; 
+}
+/* Select all elements with class "description" that are a child of the <div> elements with class "province" and adjust it’s margin size, height and  add add a scroll bar property*/
+
+div.province a{
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5x;
+}
+/* Select all <a> elements that are a child of the <div> elements with class “province”  
+and adjust it’s text position, padding, background color, padding size and the display property*/
+
+img.flag{
+    width: 100%;
+}
+/* Select al <img> elements with class “flag” adjust it’s width */

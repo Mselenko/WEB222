@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Selenko</title>
+	<link rel="stylesheet" href="normalize1.css">
+	<script src="registration.js"></script>
+</head>
+
+<body style="background-image: url(img/bg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover">
+
+	<div class="main-container">
+
+		<header>
+			<h4>Online Store</h4>
+			<h2>Registration Page</h2>
+
+		</header>
+
+		<div class="cont">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="registration.html">Registration</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="main">
+				
+					<form id=signup name="signup" action="https://httpbin.org/post" method="post" onsubmit="return formValidation();">
+						<article>
+							<fieldset>
+								<legend>Personal Information</legend>
+								<p>
+								<br>
+								<span class="s">Name:
+									<input type="text" name="firstname" required="required" placeholder="First or Given Name">
+								</span>
+								<span class="s">
+									<input type="text" name="lastname" required="required" placeholder="Last Name" id="lastname">
+								</span>
+							</p>
+						<div class="reg">
+							<br>
+							<div class="a">
+								Unit Number:
+								<input type="text" name="unit" required="required">
+								<br> Street Number:
+								<input type="text" name="street" required="required">
+								<br> Street Name:
+								<input type="text" name="st_name" required="required" title="Street Name must contain letters only"
+								 id="street" onclick = "clearErrors();" onchange="validStreet()">
+								<br> City:
+								<input type="text" name="city" required="required" id="city" title="City Name must contain letters only" onclick = "clearErrors();" onchange="validCity();">
+								<br>
+								<p>
+									Province:
+									<select name="province" id="province">
+										<option value="1" selected>ONTARIO</option>
+										<option value="2">BRITISH COLUMBIA</option>
+										<option value="3">MANITOBA</option>
+										<option value="4">NEW BRUNSWICK</option>
+										<option value="5">QUEBEC</option>
+										<option value="6">SASKATCHEWAN</option>
+										<option value="7"> YUKON</option>
+										<option value="8">NOVA SCOTIA</option>
+										<option value="9">PRINCE EDWARD ISLAND</option>
+										<option value="10">ALBERTA</option>
+									</select>
+								</p>
+								Postal Code:
+								<input type="text" name="code" required="required" id="postalcode" placeholder="C1A1A7" onclick = "clearErrors();" onchange= "checkZip();" title="Only Canadian format allowed (Letter Digit Letter Digit Letter Digit)">
+								<br>
+								<br> Phone Number:
+								<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required="required" id="phone"  onclick = "clearErrors();" onchange= "validatePhoneNumber();">
+								<br> Email:
+								<input type="email" name="email" required="required">
+								<br>
+								<p>Username:
+									<input name="username" required="required" id="username" onclick = "clearErrors();" onchange= "username1();" title="Username must start with a letter, must have at least 6 characters."/>
+									<br> Password:
+									<input type="password" name="password" required="required" maxlength="8" id="password">
+									<br> Retype Password:
+									<input type="password" name="r_password" required="required" onclick = "clearErrors();" onchange=" password1();"  maxlength="8" id="r_password" title="Password: must be 8 characters long, must start with a character, must have at least 1 digit and 1 uppercase."/>
+								</p>
+							</div>
+						</div>
+						</fieldset>					
+				</article>
+			<aside class="aside">
+				<p>
+					<input class="click" type="reset" value="Reset" onclick="clearErrors();">
+					<input class="click" type="submit" value="Submit">
+					<input type="hidden" name="lastName" id="lastName" value="Selenko" />
+					<input type="hidden" name="studentId" id="studentId" value="147393169" />
+				</p>
+				<br>
+				<div id="errors"></div>
+			</aside>
+
+		</form>
+		</section>
+		</div>
+		<footer></footer>
+	</div>
+</body>
+
+</html>
